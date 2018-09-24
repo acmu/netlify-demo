@@ -12,6 +12,10 @@ html {
   color: #333;
 }
 
+body {
+  margin: 0;
+}
+
 .content p {
   font-weight: 400;
   color: #35495e;
