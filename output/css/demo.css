@@ -41,28 +41,43 @@ html {
   padding: 0 1.8rem;
 }
 
+.head {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul > li {
+  padding: .5rem 0;
+}
+ol > li {
+  padding: .3rem 0;
+}
+
 .img img {
   max-width: 200px;
   border-radius: 5px;
-  overflow: hidden;
-  vertical-align: text-bottom;
+  vertical-align: top;
 }
 
 .img {
-  margin: 10px 40px;
+  display: inline-block;
   padding: 5px;
-  overflow: hidden;
-  float: left;
   background-color: #ddd;
   border-radius: 5px;
   box-shadow: 1px 1px 5px #888888;
 }
 
 
+
 .contact {
   overflow: hidden;
+  vertical-align: bottom;
 }
-
 
 h1 {
   text-align: center;
