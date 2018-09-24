@@ -33,11 +33,12 @@ html {
 
 
 .container {
-  max-width: 1000px;
+  max-width: 888px;
   margin: 1rem auto 2rem;
   background-color: rgba(238, 177, 98, 0.541);
   min-height: 500px;
   border-radius: 10px;
+  padding: 0 1.8rem;
 }
 
 .img img {
@@ -65,6 +66,18 @@ html {
 
 h1 {
   text-align: center;
-  font-weight: normal;
   padding-top: 26px;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+.foot {
+  padding-bottom: 30px;
+}
+
+li {
+  color: #35495e;
 }
