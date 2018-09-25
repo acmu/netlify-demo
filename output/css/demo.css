@@ -84,6 +84,22 @@ body {
   }
 }
 
+@keyframes imgRotate {
+  0% {
+    transform: scale(.65, .65);
+  }
+  85% {
+    transform: scale(1.04, 1.04);
+  }
+  95% {
+    transform: scale(.98, .98);
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -108,7 +124,7 @@ ol > li {
 
 .img {
   display: inline-block;
-  transition: all 1.2s;
+  animation: imgRotate 1.5s linear;
   opacity: 0;
   padding: 5px;
   background-color: rgba(255, 255, 255, .6);
