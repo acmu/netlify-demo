@@ -58,10 +58,16 @@ ul {
   padding: 0;
 }
 ul > li {
-  padding: .5rem 0;
+  padding-top: 1rem;
+  color: #060481;
+  margin-left: 400px;
+  opacity: 0;
+  transition: all 1.2s;
+  white-space: nowrap;
 }
 ol > li {
   padding: .3rem 0;
+  color: #35495e;
 }
 
 .img img {
@@ -72,8 +78,10 @@ ol > li {
 
 .img {
   display: inline-block;
+  transition: all 1.2s;
+  opacity: 0;
   padding: 5px;
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, .6);
   border-radius: 5px;
   box-shadow: 1px 1px 5px #888888;
 }
@@ -90,15 +98,10 @@ h1 {
   padding-top: 26px;
 }
 h1,
-h2,
 h3 {
   font-weight: normal;
 }
 
 .foot {
   padding-bottom: 30px;
-}
-
-li {
-  color: #35495e;
 }
