@@ -84,22 +84,6 @@ body {
   }
 }
 
-@keyframes imgRotate {
-  0% {
-    transform: scale(.45, .45);
-  }
-  85% {
-    transform: scale(1.04, 1.04);
-  }
-  95% {
-    transform: scale(.98, .98);
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-}
-
 @keyframes imgMove {
   0% {
     transform: scale(.45, .45);
@@ -141,8 +125,6 @@ ol > li {
   border-radius: 5px;
   box-shadow: 1px 1px 5px #888888;
 }
-
-
 
 .contact {
   vertical-align: bottom;
