@@ -9,9 +9,5 @@ window.onload = function() {
       uli[i].style.opacity = '1';
     }, 300*i);
   }
-  img.onload = function() {
-    let headImg = document.querySelector('.head>.img');
-    headImg.style.opacity = '1';
-  }
 }
 
