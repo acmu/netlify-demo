@@ -86,13 +86,23 @@ body {
 
 @keyframes imgRotate {
   0% {
-    transform: scale(.65, .65);
+    transform: scale(.45, .45);
   }
   85% {
     transform: scale(1.04, 1.04);
   }
   95% {
     transform: scale(.98, .98);
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes imgMove {
+  0% {
+    transform: scale(.45, .45);
   }
   100% {
     transform: scale(1, 1);
@@ -124,7 +134,7 @@ ol > li {
 
 .img {
   display: inline-block;
-  animation: imgRotate 1.5s linear;
+  animation: imgMove 1s linear;
   opacity: 0;
   padding: 5px;
   background-color: rgba(255, 255, 255, .6);
@@ -149,4 +159,47 @@ h3 {
 
 .foot {
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 8px 28px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+[for=github] {
+  background-color: #333;
+}
+[for=github]:hover {
+  background-color: rgb(104, 96, 96);
+  box-shadow: 0 0 10px rgb(56, 202, 212);
+}
+
+[for=blog] {
+  background-color: rgb(65, 164, 221);
+}
+[for=blog]:hover {
+  background-color: rgb(128, 192, 230);
+  box-shadow: 0 0 10px rgb(56, 202, 212);
+}
+
+.btn-se {
+  display: inline-block;
+  padding: 3px;
+  background-color: transparent;
+  border-radius: 999px;
+}
+
+.btn-se:hover {
+  background-color: #ddd;
 }
