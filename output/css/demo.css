@@ -23,7 +23,6 @@ body {
   line-height: 23px;
   margin: 10px 0;
   word-spacing: 2px;
-  overflow: hidden;
 }
 
 
@@ -53,16 +52,47 @@ body {
   width: 100%;
 }
 
+@keyframes flip {
+  0% {
+    margin-left: 80px;
+    opacity: 0;
+  }
+  65% {
+    margin-left: -8px;
+  }
+  78% {
+    margin-left: 7px;
+  }
+  85% {
+    margin-left: -5px;
+  }
+  90% {
+    margin-left: 4px;
+  }
+  93% {
+    margin-left: -3px;
+  }
+  96% {
+    margin-left: -2px;
+  }
+  98% {
+    margin-left: -2px;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
 ul {
   list-style: none;
   padding: 0;
+  width: 170px;
 }
 ul > li {
   padding-top: 1rem;
   color: #060481;
-  margin-left: 400px;
   opacity: 0;
-  transition: all 1.2s;
   white-space: nowrap;
 }
 ol > li {
@@ -89,7 +119,6 @@ ol > li {
 
 
 .contact {
-  overflow: hidden;
   vertical-align: bottom;
 }
 
